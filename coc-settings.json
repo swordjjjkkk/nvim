@@ -1,0 +1,26 @@
+{
+    "signature.preferShownAbove":false,
+
+    "clangd.disableSnippetCompletion": false,
+    "pairs.enableCharacters": ["(", "[", "'", "\"", "`"],
+    "suggest.noselect": false,
+    "python.autoComplete.addBrackets": true,
+    "coc.preferences.noselect": false,
+    "diagnostic.warningSign": "!!",
+    "clangd.semanticHighlighting": true,
+    "clangd.disableSnippetCompletion": true,
+    "translator": {
+        "engines": [
+            "google"
+        ]
+    },
+    "intelephense.diagnostics.undefinedTypes":false,
+    "intelephense.diagnostics.undefinedFunctions":false,
+    "intelephense.diagnostics.undefinedConstants":false,
+    "intelephense.diagnostics.undefinedClassConstants":false,
+    "intelephense.diagnostics.undefinedMethods":false,
+    "intelephense.diagnostics.undefinedProperties":false,
+    "intelephense.diagnostics.undefinedVariables":false,
+    "intelephense.diagnostics.undefinedVariablesintelephense":false
+
+}
