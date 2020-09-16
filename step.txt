@@ -5,7 +5,7 @@ echo y | sudo apt-get install git
 
 git clone git@github.com:swordjjjkkk/nvim.git
 
-sudo ln -s  ~/.config/nvim/nvim.appimage /usr/bin/nvim
+sudo mv   ~/.config/nvim/nvim.appimage /usr/bin/nvim
 sudo chmod +x /usr/bin/nvim
 
 sudo mkdir -p ~/.local/share/nvim/site/autoload/
