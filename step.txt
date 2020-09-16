@@ -1,16 +1,19 @@
 
+mkdir -p ~/.config
 
-sudo ln -s  ~/backup/nvim.appimage /usr/bin/nvim
+echo y | sudo apt-get install git
+
+git clone git@github.com:swordjjjkkk/nvim.git
+
+sudo ln -s  ~/.config/nvim/nvim.appimage /usr/bin/nvim
 sudo chmod +x /usr/bin/nvim
 
 sudo mkdir -p ~/.local/share/nvim/site/autoload/
-cp ~/backup/plug.vim ~/.local/share/nvim/site/autoload/
+cp ~/.config/nvim/plug.vim ~/.local/share/nvim/site/autoload/
 
-mkdir -p ~/.config/ && cp -r ~/backup/nvim "$_"
 
 sudo apt update
 
-echo y | sudo apt-get install git
 
 
 
@@ -25,4 +28,3 @@ sudo pip3 install jedi
 
 echo y | sudo apt install npm
 
-./configure --prefix=/usr/local/php  --enable-fpm --with-mcrypt --enable-mbstring --disable-pdo --with-curl --disable-debug  --disable-rpath --enable-inline-optimization --with-bz2  --with-zlib --enable-sockets --enable-sysvsem --enable-sysvshm --enable-pcntl --enable-mbregex --with-mhash --enable-zip --with-pcre-regex --with-mysql --with-mysqli --with-gd --with-jpeg-dir
