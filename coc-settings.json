@@ -21,6 +21,11 @@
     "intelephense.diagnostics.undefinedMethods":false,
     "intelephense.diagnostics.undefinedProperties":false,
     "intelephense.diagnostics.undefinedVariables":false,
-    "intelephense.diagnostics.undefinedVariablesintelephense":false
+    "intelephense.diagnostics.undefinedVariablesintelephense":false,
+    "todolist.easyMode": {
+      "type": "boolean",
+      "default": true,
+      "description": "Open a todo edit window when create/edit a todo item"
+    }
 
 }

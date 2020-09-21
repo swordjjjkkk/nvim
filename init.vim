@@ -18,6 +18,7 @@ Plug 'swordjjjkkk/vim-monokai'
 Plug 'jackguo380/vim-lsp-cxx-highlight'
 Plug 'Chiel92/vim-autoformat'
 Plug 'StanAngeloff/php.vim'
+Plug 'voldikss/coc-todolist', {'do': 'yarn install --frozen-lockfile'}
 call plug#end()
 
 let g:indentLine_setConceal=0
@@ -25,6 +26,8 @@ let g:indentLine_setConceal=0
 "COC PLUGIN
 let g:coc_global_extensions=['coc-json','coc-phpls', 'coc-highlight','coc-pairs','coc-snippets','coc-clangd','coc-cmake','coc-python','coc-sh','coc-translator' ]
 "basic config
+set runtimepath^=~/.vim/plugged/coc-todolist
+set noswapfile
 if ! exists("g:CheckUpdateStarted")
     let g:CheckUpdateStarted=1
     call timer_start(1,'CheckUpdate')
@@ -53,6 +56,7 @@ let g:loaded_python_provider=0
 set showtabline=2
 set number
 vnoremap <leader>th :s/\v([0123456789ABCDEFabcdef]{2})/0x\1,/g<cr>
+vnoremap <leader>pth :s/\v([0123456789ABCDEFabcdef]{2})/\\x\1/g<cr>
 nnoremap x "_x
 nnoremap X "_X
 nnoremap dd "_dd
@@ -398,3 +402,6 @@ let g:Lf_PreviewResult = {
         \}
 "php vim config
 let g:php_var_selector_is_identifier=1 
+"coc-todolist config
+nnoremap <leader>ctd :CocCommand todolist.create<cr>
+nnoremap <leader>td :CocList todolist<cr>
