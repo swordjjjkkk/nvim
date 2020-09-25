@@ -18,7 +18,7 @@ Plug 'swordjjjkkk/vim-monokai'
 Plug 'jackguo380/vim-lsp-cxx-highlight'
 Plug 'Chiel92/vim-autoformat'
 Plug 'StanAngeloff/php.vim'
-Plug 'voldikss/coc-todolist', {'do': 'yarn install --frozen-lockfile'}
+Plug 'swordjjjkkk/coc-todolist', {'do': 'yarn install --frozen-lockfile'}
 call plug#end()
 
 let g:indentLine_setConceal=0
