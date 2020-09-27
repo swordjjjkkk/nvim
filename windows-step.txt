@@ -1,0 +1,9 @@
+解压neovim5.0添加环境变量
+ cp .\plug.vim "$env:LOCALAPPDATA/nvim-data/site/autoload/"
+
+管理员powershell下安装ripgrep ：choco install ripgrep
+安装nodejs
+安装clangd
+安装npm
+pip3 install pynvim
+pip3 install jedi
