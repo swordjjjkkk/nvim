@@ -125,8 +125,8 @@ inoremap <C-l> <Right>
 inoremap <C-h> <Left>
 inoremap <C-k> <Up>
 inoremap <C-j> <Down>
-nnoremap e <C-e>
-nnoremap w <C-y>
+nnoremap e <C-e><C-e><C-e><C-e><C-e>
+nnoremap w <C-y><C-y><C-y><C-y><C-y>
 nnoremap x "_x
 nnoremap X "_X
 nnoremap dd "_dd
